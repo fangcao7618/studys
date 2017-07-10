@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>周期函数</title>
+  <script src="bower_components/react/react.js"></script>
+  <script src="bower_components/react/react-dom.js"></script>
+  <script src="bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+    <div id="app" >
+
+    </div>
+
+    <script type="text/babel">
+    var MessageBox = React.createClass({
+        getInitialState:function(){
+            return{
+                titleCount:0,
+                titleMessage:!!this.props.title? this.props.title:'你的世界（来自state哦）'
+            }
+        },
+        getDefaultProps:function(){
+            console.log('getDefaultProps');
+        },
+        componentWillMount:function(){
+            console.log('componentWillMount');
+            var self=this;
+            this.timer=setInterval(()=>{
+                self.setState({
+                    titleCount:self.state.titleCount+1,
+                });
+            },1000);
+            this.setState({
+                titleMessage:'ssssssss'
+            });
+        },
+        componentDidMount:function(){
+            console.log('componentDidMount');
+        },
+        componentWillUnmount:function(){
+            console.log('kill me');
+            clearInterval(this.timer);
+        },
+        deleComp:function(){
+            ReactDOM.unmountComponentAtNode(document.getElementById('app'));
+        },
+         render:function(){
+             console.log('渲染');
+            var summessages=[];
+
+            for(var ii=0;ii<=10;ii++){
+                summessages.push(
+                    <Submessage mes={this.state.titleMessage} key={'subId:'+ii} data-ii={ii} />
+                );
+            }
+           return(
+               <div>
+               <h1 >你好世界！！！</h1>
+               <p>计数：{this.state.titleCount}</p>
+               <button onClick={this.deleComp}>删除这个组建</button>
+               {summessages}
+               </div>
+           )
+         }
+     });
+
+     var Submessage = React.createClass({
+         propTypes:{
+             mes:React.PropTypes.string.isRequired
+         },
+         getDefaultProps:function(){
+             return{
+                 mes:'默认的'
+             }
+         },
+         render:function(){
+             return (
+                 <div>
+                 <h3>写代码很有意思{this.props.mes}</h3>
+                 <Footer />
+                 </div>
+             )
+         }
+     });
+
+     var Footer= React.createClass({
+         render:function(){
+             return (
+                 <small>因为我们在用代码创造</small>
+             )
+         }
+     });
+    var title='你好世界（来自props哦）';
+     ReactDOM.render(
+         <MessageBox title={''} />,
+         document.getElementById('app'),
+        function(){
+           console.log('渲染完成了！');
+         }
+     );
+    </script>
+</body>
+</html>

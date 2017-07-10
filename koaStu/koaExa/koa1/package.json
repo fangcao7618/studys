@@ -1,0 +1,20 @@
+{
+  "name": "koaExa",
+  "version": "1.0.0",
+  "main": "node --debug-brk=40645 --nolazy app.js or node --inspect=40645 --nolazy app.js",
+  "repository": "git@github.com:fangcao7618/koaExa.git(https://github.com/fangcao7618/koaExa.git)",
+  "author": "fangcao",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "co": "^4.6.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-ejs": "^4.1.0",
+    "koa-router": "^7.2.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "webSocket",
+  "version": "1.0.0",
+  "description": "Hello WebSocket example",
+  "main": "node app.js",
+  "author": "fangcao",
+  "license": "MIT",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "dependencies": {
+    "ws": "^3.0.0"
+  }
+}

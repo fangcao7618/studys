@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>react-study</title>
+  <script src="bower_components/react/react.js"></script>
+  <script src="bower_components/react/react-dom.js"></script>
+  <script src="bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+    <div id="app" >
+
+    </div>
+
+    <script type="text/babel">
+    var MessageBox = React.createClass({
+         render:function(){
+            var summessages=[];
+            for(var ii=0;ii<=10;ii++){
+                summessages.push(
+                    <Submessage key={'subId:'+ii} data-ii={ii} />
+                );
+            }
+           return( 
+               <div>
+               <h1 >你好世界！！！</h1>
+               {summessages}
+               </div>
+           )
+         }
+     });
+
+     var Submessage = React.createClass({
+         render:function(){
+             return (
+                 <div>
+                 <h3>写代码很有意思</h3>
+                 <Footer />
+                 </div>
+             )
+         }
+     });
+
+     var Footer= React.createClass({
+         render:function(){
+             return (
+                 <small>因为我们在用代码创造</small>
+             )
+         }
+     });
+    
+     ReactDOM.render(
+         <MessageBox />,
+         document.getElementById('app'),
+        function(){
+           console.log('渲染完成了！');
+         }
+     );
+    </script>
+</body>
+</html>

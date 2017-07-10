@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>箭头函数</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    () => { statements; }
+        ([a, b, ...rest] = [1, 2, 3, 4, 5]);
+        ({ c, d } = { c: 1, d: 2 }); //对象结构赋值
+        // params => ({foo: bar});
+        // (param1, param2, ...rest) => { statements }
+        let x1 = (param1, param2, ...rest) => {
+            console.log(`%c {statements}`, `color:red`);
+        };
+        console.log(x1());
+
+
+        console.log('给新的变量名赋值');
+        var o = { p: 42, q: true };
+        var { p: foo, q: bar } = o;
+
+        console.log(foo); // 42 
+        console.log(bar); // true
+
+        console.log('函数参数默认值');
+        //es5
+        function drawES5Chart(options) {
+            options = options === undefined ? {} : options;
+            var size = options.size === undefined ? 'big' : options.size;
+            var cords = options.cords === undefined ? { x: 0, y: 0 } : options.cords;
+            var radius = options.radius === undefined ? 25 : options.radius;
+            console.log(size, cords, radius);
+        }
+
+        drawES5Chart({
+            cords: { x: 18, y: 30 },
+            radius: 30
+        });
+        //es6
+        function drawES6Chart({ size = 'big', cords = { x: 0, y: 0 }, radius = 25 } = {}) {
+            console.log(size, cords, radius);
+        }
+
+        drawES6Chart({
+            cords: { x: 28, y: 60 },
+            radius: 30
+        });
+
+        console.log('结构嵌套的对象和数组');
+        var metadata = {
+            title: "Scratchpad",
+            translations: [
+                {
+                    locale: "de",
+                    localization_tags: [],
+                    last_edit: "2014-04-14T08:43:37",
+                    url: "/de/docs/Tools/Scratchpad",
+                    title: "JavaScript-Umgebung"
+                }
+            ],
+            url: "/en-US/docs/Tools/Scratchpad"
+        };
+
+        var { title: englishTitle, translations: [{ title: localeTitle }] } = metadata;
+
+        console.log(englishTitle); // "Scratchpad"
+        console.log(localeTitle);  // "JavaScript-Umgebung"
+
+        console.log('迭代和结构');
+        var people = [
+            {
+                name: "Mike Smith",
+                family: {
+                    mother: "Jane Smith",
+                    father: "Harry Smith",
+                    sister: "Samantha Smith"
+                },
+                age: 35
+            },
+            {
+                name: "Tom Jones",
+                family: {
+                    mother: "Norah Jones",
+                    father: "Richard Jones",
+                    brother: "Howard Jones"
+                },
+                age: 25
+            }
+        ];
+
+        for (var { name: n, family: { father: f } } of people) {
+            console.log("Name: " + n + ", Father: " + f);
+        }
+
+        console.log('从做为函数的实参对象中提取数据');
+        function userId({ id }) {
+            return id;
+        }
+        function userId2({ id = 1 } = {}) {
+            return id;
+        }
+
+        function whois({ displayName: displayName, fullName: { firstName: name } }) {
+            console.log(displayName + " is " + name);
+        }
+
+        function whois2({ displayName = 'fangcao', fullName = { firstName: 'wang' } } = {}) {
+            console.log(displayName + " is " + fullName.firstName);
+        }
+
+        var user = {
+            id: 42,
+            displayName: "jdoe",
+            fullName: {
+                firstName: "John",
+                lastName: "Doe"
+            }
+        };
+
+        console.log("userId: " + userId(user)); // "userId: 42"
+        console.log("userId2(user): " + userId2(user), "userId2()" + userId2());
+        whois(user); // "jdoe is John"
+        whois2();
+        whois2(user);
+
+
+        console.log('对象属性计算名和解构')
+        let key = "z";
+        let { [key]: foos } = { z: "bar" };
+
+        console.log(foos); // "bar"
+    </script>
+</body>
+
+</html>

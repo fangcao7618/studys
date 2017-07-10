@@ -1,0 +1,90 @@
+<html>
+<head>
+  <title>react-study</title>
+  <script src="bower_components/react/react.js"></script>
+  <script src="bower_components/react/react-dom.js"></script>
+  <script src="bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+    <div id="app" >
+    </div>
+
+    <script type="text/babel">
+    var MessageBox = React.createClass({
+        getInitialState:function(){
+            return {
+                isVisible:true,
+                // titleMessage:'你好世界（来自state哦）',
+                subMessages:[
+                  '我会代码搬砖',
+                  '已及花式搬砖',
+                  '不说了，工头叫我回去搬砖了......'
+                ]
+            }
+        },
+        // propTypes:{
+        //   title:React.PropTypes.string.isRequired,
+        // },
+         render:function(){
+            var styleObj={
+                display:this.state.isVisible ? 'block':'none'
+            };
+           return(
+               <div>
+               <h1 style={styleObj} >{this.props.title}</h1>
+               <Submessage messages={this.state.subMessages} />
+               </div>
+           )
+         }
+     });
+
+     var Submessage = React.createClass({
+         propTypes:{
+           messages:React.PropTypes.array.isRequired,
+         },
+         getDefaultProps:function(){
+           return {
+             messages:['默认的子消息']
+           }
+         },
+         render:function(){
+           var msgs=[];
+           this.props.messages.map((msg,index)=>{
+             msgs.push(
+               <p key={index}>
+               码农说：{msg}
+               </p>
+             );
+           });
+             return (
+                 <div>
+                 {msgs}
+                 <Footer />
+                 </div>
+             )
+         }
+     });
+
+     var Footer= React.createClass({
+         render:function(){
+             return (
+                 <small>因为我们在用代码创造</small>
+             )
+         }
+     });
+      var title='你好世界（来自props哦）';
+     window.messageBox = ReactDOM.render(
+         <MessageBox title={title} />,
+         document.getElementById('app'),
+        function(){
+           console.log('渲染完成了！');
+         }
+     );
+     console.log(messageBox,'------messageBox');
+    //  messageBox.setState({titleMessage:'hahahahaha'});
+    //  console.log(messageBox,'------messageBox');
+    //  React.render(<h1>React入门教程</h1>,document.getElementById("app"));
+     //var messageBox = React.render(<MessageBox />,document.getElementById('app'),function(){console.log('渲染完成了！');});
+    </script>
+</body>
+</html>

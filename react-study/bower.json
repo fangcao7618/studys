@@ -1,0 +1,21 @@
+{
+  "name": "react-study",
+  "authors": [
+    "wangfangcao <836036143@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "15.3.1"
+  }
+}

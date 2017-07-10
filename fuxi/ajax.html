@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var url='b.html';
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'json';
+
+        xhr.onload = function() {
+        console.log(xhr.response);
+        };
+
+        xhr.onerror = function() {
+        console.log("Oops, error");
+        };
+
+        xhr.send();
+
+
+
+        fetch(url).then(function(response) {
+        return response.json();
+        }).then(function(data) {
+        console.log(data);
+        }).catch(function(e) {
+        console.log("Oops, error");
+        });
+    
+
+        fetch(url).then(response => response.json())
+        .then(data => console.log(data))
+        .catch(e => console.log("Oops, error", e));
+
+
+        async function(){
+            try {
+                let response = await fetch(url);
+                let data = await response.json()
+                        //文章中这里漏了await，因为response.json()后需要.then才能接收data
+                console.log(data);
+            }catch(e) {
+                console.log("Oops, error", e);
+            }
+        }
+
+    </script>
+</body>
+</html>

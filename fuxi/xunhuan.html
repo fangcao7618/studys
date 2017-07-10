@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var foo = {
+            name: 'bar',
+            sex: 'male'
+        };
+        Object.defineProperty(foo, "age", { value: 18 });
+        for (var a in foo) {
+            console.log('可枚举属性', '${a}', a);
+        }
+        console.log('cc:', foo);
+        //可枚举属性 ${a} name 可枚举属性 ${a} sex
+
+        foo.name = 'fangcao';
+        foo.sex = 'aa';
+        foo.age = 20;
+
+        console.log(foo);//fangcao,aa,18
+
+        //for…of的好处是可以使用break跳出循环。
+        var fooc = [{
+            foocName: 'fangcao',
+            foocAge: 28
+        }, {
+            foocName: 'fangcao2',
+            foocAge: 20
+        }, {
+            foocName: 'fangcao3',
+            foocAge: 15
+        }, {
+            foocName: 'fangcao4',
+            foocAge: 12
+        }, {
+            foocName: 'fangcao5',
+            foocAge: 10
+        }];
+        for (var v of fooc) {
+            console.log(v.foocName, v.age, (v.foocAge <= 15));
+            if (v.foocAge < 15) {
+                console.log(v, ' 小于15岁的有 ');
+                // break;
+            }
+        }
+
+
+        let foo2 = [5, 1, 3, 7, 4].every(function (item, index) {
+            console.log(`索引：${index}，数值：${item}`);
+            return item > 2
+        })
+        console.log(foo2);
+        //索引：0，数值：5  索引：1，数值：1  false
+
+
+        let foo3 = [5, 1, 3, 7, 4].some(function (item, index) {
+            console.log(`索引：${index}，数值：${item}`);
+            return item > 2
+        })
+        console.log(foo3);
+        //索引：0，数值：5 true
+
+
+        let foo4 = [5, 1, 3, 7, 4].filter(function (item, index) {
+            console.log(`索引：${index}，数值：${item}`)
+            return item > 2
+        })
+        console.log(foo4);
+        // 索引：0，数值：5
+        // 索引：1，数值：1
+        // 索引：2，数值：3
+        // 索引：3，数值：7
+        // 索引：4，数值：4
+        // [5, 3, 7, 4]
+
+
+        let foo5=[5,1,3,7,4].map(function (item,index) {
+            console.log(`索引：${index}，数值：${item}`)
+            return item+2
+        })
+        console.log(foo5);
+        // 索引：0，数值：5
+        // 索引：1，数值：1
+        // 索引：2，数值：3
+        // 索引：3，数值：7
+        // 索引：4，数值：4
+        // [7, 3, 5, 9, 6]
+
+
+        let foo6=[5,1,3,7,4].reduce(function (pre,cur) {
+            console.log(`索引：${pre}，数值：${cur}`)
+            return pre+cur
+        })
+        console.log(foo6);
+        // 索引：5，数值：1
+        // 索引：6，数值：3
+        // 索引：9，数值：7
+        // 索引：16，数值：4
+        // 20
+
+        let foo7=[5,1,3,7,4].reduce(function (pre) {
+            console.log(`数值：${pre}`)
+            
+        })
+        console.log(foo7,' foo7');
+        // 数值：5
+        // 数值：undefined
+        // 数值：undefined
+        // 数值：undefined
+        // undefined " foo7"
+
+
+        let foo8=[5,1,3,7,4].reduce(function (pre,cur) {
+            console.log(`索引：${pre}，数值：${cur}`)
+            return pre+cur
+        },'')
+        console.log(foo8);
+        // 索引：，数值：5
+        // 索引：5，数值：1
+        // 索引：51，数值：3
+        // 索引：513，数值：7
+        // 索引：5137，数值：4
+        // 51374
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "react-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "JSXTransformer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --devtool eval --progress --colors --hot --content-base build",
+    "pub": "webpack --config webpack.pub.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <!-- <script src="react.js"></script>
+    <script src="react-dom.js"></script> -->
+    <script src="bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+    var MyContainer = React.createClass({
+        getInitialState: function(){
+            return {
+                list: ['item1', 'item2'],
+                curItem: 'item1'
+            }
+        },
+        // 改变curItem的回调函数
+        changeItem: function(item){
+            this.setState({
+                curItem: item
+            });
+        },
+        render: function(){
+            return (
+                <div>
+                    The curItem is: {this.state.curItem}
+                    <List curItem={this.state.curItem} list={this.state.list} changeItem={this.changeItem}/>
+                    <SelectionButtons changeItem={this.changeItem}/>
+                </div>
+            )
+        }
+    });
+ 
+var List = React.createClass({
+	onClickItem: function(item){
+		this.props.changeItem(item);
+	},
+	render: function(){
+        var selectedStyle = {
+			color: 'white',
+			background: 'red'
+		};
+		return (
+			<ul>
+				{
+                    (function(){
+						var self = this;
+						return this.props.list.map(function(item,index){
+                            console.log(item,self.props.curItem,'=====item,self.props.curItem');
+							var itemStyle = (item == self.props.curItem) ? selectedStyle : {};
+                            console.log(itemStyle,'======itemStyle');
+							return (
+								<li key={index} style={itemStyle}  onClick={self.onClickItem.bind(self, item)}>I am {item}!</li>		
+							)
+						});
+					}.bind(this))()
+		
+				}
+ 
+			</ul>
+		)
+	}
+});
+var SelectionButtons = React.createClass({
+	onClickItem: function(item){
+		this.props.changeItem(item);
+	},
+	render: function(){
+		return (
+			<div>
+				<button onClick={this.onClickItem.bind(this, 'item1')}>item1</button>
+				<button onClick={this.onClickItem.bind(this, 'item2')}>item2</button>
+			</div>
+		)
+	}
+});
+ 
+ 
+ReactDOM.render(
+  <MyContainer />,
+  document.getElementById('app')
+);
+    </script>
+</body>
+</html>

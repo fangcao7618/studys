@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <!-- <script src="react.js"></script>
+    <script src="react-dom.js"></script> -->
+    <script src="bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+    //使用上下文可以让子组件直接访问祖先的数据或函数，无需从祖先组件一层层地传递数据到子组件中。
+    var MyContainer = React.createClass({
+        getInitialState: function(){
+            return {
+                curItem: 'item1'
+            }
+        },
+        childContextTypes: {
+            curItem: React.PropTypes.any,
+            changeItem: React.PropTypes.any
+        },
+        getChildContext: function(){
+            return {
+                curItem: this.state.curItem,
+                changeItem: this.changeItem
+            }
+        },
+        changeItem: function(item){
+            this.setState({
+                curItem: item
+            });
+        },
+        render: function(){
+            return (
+                <div>
+                    <CurItemWrapper />
+                    <ListWrapper changeItem={this.changeItem}/>
+                </div>
+            )
+        }
+    });
+    var CurItemWrapper = React.createClass({
+        render: function(){
+            return (
+                <div>
+                    <CurItemPp />
+                </div>
+            )
+        }
+    });
+
+    var CurItemPp=React.createClass({
+        render:function(){
+            return(
+                <div>
+                    <CurItemPanel />
+                </div>
+            )
+        }
+    });
+    
+    var CurItemPanel = React.createClass({
+        contextTypes: {
+            curItem: React.PropTypes.any
+        },
+        render: function(){
+            console.log(this,this.context,'======this,this.context======');
+            return (
+                <p>
+                    The curItem is: {this.context.curItem}
+                </p>
+            )
+        }
+    
+    });
+    var ListWrapper = React.createClass({
+        render: function(){
+            return (
+                <div>
+                    <List />
+                </div>
+            )
+        }
+    });
+    
+    var List = React.createClass({
+        contextTypes: {
+            changeItem: React.PropTypes.any
+        },
+        onClickItem: function(item){
+            this.context.changeItem(item);
+        },
+        render: function(){
+            return (
+                <ul>
+                    <li onClick={this.onClickItem.bind(this, 'item1')}>I am item1, click me!</li>
+                    <li onClick={this.onClickItem.bind(this, 'item2')}>I am item2, click me!</li>
+                </ul>
+            )
+        }
+    });
+    ReactDOM.render(
+    <MyContainer />,
+    document.getElementById('app')
+    );
+    </script>
+</body>
+</html>

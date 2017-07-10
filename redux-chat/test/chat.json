@@ -1,0 +1,17 @@
+{
+  //保存在服务器端
+  rooms: [{
+    id, name, owner
+  }],
+} {
+  username,
+  current,
+  messages: {
+    id: [{
+      content, user, time
+    }],
+    id2: [{
+
+    }]
+  }
+}

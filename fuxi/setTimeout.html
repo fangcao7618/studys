@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setTimeOut</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Foo(){
+            getName =function(){
+                console.log(1);
+            }
+            return this;
+        }
+        Foo.getName=function(){
+            console.log(2);
+        }
+        Foo.prototype.getName=function(){
+            console.log(3);
+        }
+        var getName=function(){
+            console.log(4);
+        }
+        function getName(){
+            console.log(5);
+        }
+        Foo.getName();//2
+        getName();//4
+        Foo().getName();//1
+        getName();//1
+        console.log('===================');
+        new Foo.getName();//2
+        new Foo().getName();//3
+        new new Foo().getName();//3
+
+        
+        console.log('prototype结束===================');
+        for(var i=0;i<5;i++){
+            console.log(i,'循环1--------');
+            setTimeout(function(){
+                console.log(i,'==for in1');
+            },10);
+        }
+        console.log(new Date(),i,'==for out1');
+        //5->5,5,5,5,5
+
+        
+        console.log('************************');
+        for(var a=0;a<5;a++){
+            console.log(a,'循环2--------');
+            (function(a){
+                setTimeout(function(){
+                    console.log(a,'==for in2');
+                },10);
+            })(a);
+        }
+        console.log(new Date(),a,'==for out2');
+        //5->0,1,2,3,4
+
+        
+        console.log('************************');
+        var output=function(i){
+            setTimeout(function(){
+                console.log(new Date(),i,'==for in3');
+            },10);
+        };
+        for(var c=0;c<5;c++){
+            console.log(c,'循环3--------');
+            output(c);
+        }
+        console.log(new Date(),c,'==for out3');
+        //5->0,1,2,3,4
+
+        
+        console.log('************************');
+        for(let d=0;d<5;d++){
+            console.log(d,'循环4--------');
+            setTimeout(function(){
+                console.log(d,'==for in4');
+            },10);
+        }
+        // console.log(new Date(),d,'==for out4');
+        //ReferenceError:d is not undefined->0,1,2,3,4
+
+        
+        console.log('es6************************');
+        const tasks=[];//这里存放异步操作的promise
+        const outputs=(e)=>new Promise((resolve)=> setTimeout(()=>{
+            if(e===0){
+                console.log(e,'最先出来循环5@@@@@@@@@@@@@@@@@@');
+            }else{
+                console.log(e,'循环5--------');
+            }
+            resolve();
+        },1000*e));
+        //生成全部的异步操作
+        for(var e=0;e<5;e++){
+            tasks.push(outputs(e));
+        }
+        //异步操作完成之后，输出最后得 i
+        Promise.all(tasks).then(()=>{
+            setTimeout(()=>{
+                console.log(e,'循环5 promise--------');
+            },1000);
+        });
+
+        // Promise.resolve('hello wangfangcao !').then(()=> {throw new Error('报错了！')});
+
+        
+        console.log('es7************************');
+        const sleep=(timeoutMS)=> new Promise((resolve)=>{
+            setTimeout(resolve,timeoutMS);
+        });
+
+        (async()=>{
+            for(var i=0;i<5;i++){
+                if(i===0){
+                    console.log(i,'最先出来循环6@@@@@@@@@@@@@@@@@@');
+                }else{
+                    await sleep(1000);
+                    console.log(i,'循环6 promise async await----------------');
+                }
+            }
+            await sleep(1000);
+            console.log(i,'==for out6');
+        })();
+    </script>
+</body>
+</html>

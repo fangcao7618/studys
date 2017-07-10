@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>组建生命周期</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="bower_components/react/react.js"></script>
+  <script src="bower_components/react/react-dom.js"></script>
+  <script src="bower_components/babel/browser.min.js"></script>
+  <script type="text/babel">
+    var MessageBox=React.createClass({
+      getInitialState:function(){
+        return {
+          count:0,
+        }
+      },
+      getDefaultProps:function(){
+
+      },
+      componentWillMount:function(){
+
+      },
+      componentDidMount:function(){
+
+      },
+      componentWillUnmount:function(){
+
+      },
+      shouldComponentUpdate:function(nextProp,nextState){
+        console.log('shouldComponentUpdate');
+        if(nextState.count>10){
+          return false;
+        }
+        return true;
+      },
+      componentWillUpdate:function(nextProp,nextState){
+        console.log('componentWillUpdate');
+      },
+      componentDidUpdate:function(){
+        console.log('componentDidUpdate');
+      },
+      killMySelf:function(){
+        ReactDOM.unmountComponentAtNode(document.getElementById('app'));
+      },
+      doUpdate:function(){
+        this.setState({
+          count:this.state.count+1,
+        });
+      },
+      render:function(){
+        console.log('渲染');
+        return(
+          <div>
+            <h1>计数：{this.state.count}</h1>
+            <button onClick={this.killMySelf}>卸载掉这个组建</button>
+            <button onClick={this.doUpdate}>手动更新一下组建（包括子组建）</button>
+            <Submessage count={this.state.count} />
+          </div>
+        )
+      }
+    });
+    var Submessage=React.createClass({
+      componentWillReceiveProps:function(nextProp){
+        console.log(nextProp,'子组建将要获取prop  componentWillReceiveProps');
+      },
+      shouldComponentUpdate:function(nextProp,nextState){
+        console.log(nextProp,nextState,'子组建shouldComponentUpdate');
+        if(nextProp.count>5){
+          return false;
+        }
+        return true;
+      },
+      render:function(){
+        return(
+          <h3>当前计数量：{this.props.count}</h3>
+        )
+      }
+    });
+    var messageBox=ReactDOM.render(
+      <MessageBox />,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>

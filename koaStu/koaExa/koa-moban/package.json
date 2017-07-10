@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start":"node --harmony app-ejs.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.3.0",
+    "koa-swig": "^2.2.1"
+  }
+}

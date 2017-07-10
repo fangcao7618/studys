@@ -1,0 +1,10 @@
+{
+  "name": "nunjucks",
+  "version": "1.0.0",
+  "main": "node app.js",
+  "author": "fangcao",
+  "license": "MIT",
+  "dependencies": {
+    "nunjucks": "^3.0.1"
+  }
+}

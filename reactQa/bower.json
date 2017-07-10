@@ -1,0 +1,21 @@
+{
+  "name": "reactQa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "wangfangcao <836036143@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

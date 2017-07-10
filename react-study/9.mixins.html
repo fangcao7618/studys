@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mixins</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="bower_components/react/react.js"></script>
+  <script src="bower_components/react/react-dom.js"></script>
+  <script src="bower_components/babel/browser.min.js"></script>
+  <script type="text/babel">
+    var stateRecordMixin={
+      componentWillMount:function(){
+        this.oldStates=[];
+      },
+      componentWillUpdate:function(nextProp,nextState){
+        // console.log(nextProp,nextState,'======mixins:nextProp,nextState');
+        this.oldStates.push(nextState);
+      },
+      previousState:function(){
+        var index=this.oldStates.length-1;
+        // console.log(this.oldStates,'========this.oldStates');
+        return index== -1 ? {} : this.oldStates[index];
+      }
+    };
+    var MessageBox=React.createClass({
+      mixins:[stateRecordMixin],
+      getInitialState:function(){
+        return {
+          count:0,
+        }
+      },
+      killMySelf:function(){
+        ReactDOM.unmountComponentAtNode(document.getElementById('app'));
+      },
+      doUpdate:function(){
+        this.setState({
+          count:this.state.count+1,
+        });
+        alert('上一次的计数是：'+this.previousState().count);
+      },
+      render:function(){
+        console.log('渲染');
+        return(
+          <div>
+            <h1>计数：{this.state.count}</h1>
+            <button onClick={this.killMySelf}>卸载掉这个组建</button>
+            <button onClick={this.doUpdate}>手动更新一下组建（包括子组建）</button>
+            <Submessage count={this.state.count} />
+          </div>
+        )
+      }
+    });
+    var Submessage=React.createClass({
+      mixins:[stateRecordMixin],
+      getInitialState:function(){
+        return {
+          count:0,
+        }
+      },
+      componentWillReceiveProps:function(nextProps) {
+        // console.log('componentWillReceiveProps');
+        // console.log(this.props.count,'------this.props.count');
+        // console.log(this.state.count,'------this.state.count');
+        this.setState({
+          count:this.props.count+2,
+        });
+      },
+      // shouldComponentUpdate:function(nextProp,nextState){
+      //   console.log(nextProp,nextState,'子组建shouldComponentUpdate');
+      //   if(nextProp.count>5){
+      //     return false;
+      //   }
+      //   return true;
+      // },
+      render:function(){
+        console.log('上一次子组建的计数是：'+this.previousState().count);
+        return(
+          <h3>当前子组建的计数量是：{this.state.count}，父组建及数量：{this.props.count}</h3>
+        )
+      }
+    });
+    var messageBox=ReactDOM.render(
+      <MessageBox />,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>
