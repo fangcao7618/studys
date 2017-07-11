@@ -1,0 +1,12 @@
+{
+  "name": "koa-cors",
+  "version": "1.0.0",
+  "main": "node app.js",
+  "author": "fangcao",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-cors": "^0.0.16",
+    "koa-route": "^3.2.0"
+  }
+}
