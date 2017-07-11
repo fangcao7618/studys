@@ -1,0 +1,25 @@
+[2017-07-11 14:27:03.438] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser?id=1
+request client ip:  ::ffff:127.0.0.1
+request query:  {"id":"1"}
+response time: 4
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-07-11 14:27:03.465] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"阿，希爸","age":31}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+

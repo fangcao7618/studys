@@ -1,0 +1,48 @@
+[2017-07-10 16:54:09.061] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 200
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-10 16:54:16.113] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 19
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-10 16:56:23.148] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 253
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-10 16:58:54.514] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 186
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+

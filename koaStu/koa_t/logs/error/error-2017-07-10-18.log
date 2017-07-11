@@ -1,0 +1,36 @@
+[2017-07-10 18:14:31.576] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: Error
+err message: next() called multiple times
+err stack: Error: next() called multiple times
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa/node_modules/koa-compose/index.js:36:45)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa/node_modules/koa-compose/index.js:43:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:22:11
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:361
+*************** error log end ***************
+
+[2017-07-10 18:14:58.068] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: Error
+err message: next() called multiple times
+err stack: Error: next() called multiple times
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa/node_modules/koa-compose/index.js:36:45)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa/node_modules/koa-compose/index.js:43:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:22:11
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:361
+*************** error log end ***************
+

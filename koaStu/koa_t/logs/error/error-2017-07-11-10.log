@@ -1,0 +1,640 @@
+[2017-07-11 10:39:44.678] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:39:44.799] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:39:46.925] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:39:47.054] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:40:19.920] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:8:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:40:20.067] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:8:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:41:06.500] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:8:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:41:06.655] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:8:15
+    at Generator.next (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:437
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:406:12)
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:45:18)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/node_modules/koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2017-07-11 10:42:16.633] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:42:16.774] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:42:59.122] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:42:59.264] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:44:13.101] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:44:13.239] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:46:45.492] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:46:45.631] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:47:16.931] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:47:17.075] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:53:02.215] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:53:02.366] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:54:02.007] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 4
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:54:02.155] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:55:34.781] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:55:34.923] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:56:14.992] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:56:15.134] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:57:32.681] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:57:32.822] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:58:17.272] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:58:17.411] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:59:11.407] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:59:11.554] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:59:32.808] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 4
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
+[2017-07-11 10:59:32.953] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+err name: ReferenceError
+err message: ApiError is not defined
+err stack: ReferenceError: ApiError is not defined
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:28:33
+    at Generator.throw (<anonymous>)
+    at step (/Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:191)
+    at /Users/apple/Documents/2017_projects/atom/study/koaStu/koa_t/middlewares/response_formatter.js:3:402
+*************** error log end ***************
+
