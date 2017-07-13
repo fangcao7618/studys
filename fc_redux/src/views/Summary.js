@@ -9,6 +9,7 @@ class Summary extends Component {
     this.onChange = this.onChange.bind(this);
 
     this.state = this.getOwnState();
+    
   }
 
   onChange() {
